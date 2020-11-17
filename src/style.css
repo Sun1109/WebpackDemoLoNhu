@@ -1,0 +1,46 @@
+/* external css: flickity.css */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative;
+}
+
+.carouse {
+    background: #EEE;
+}
+
+.carousel-cell {
+    width: 400px;
+    height: 810px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-cell img {
+    width: 300px;
+    height: 610px;
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+    transform: scale(1.2);
+}
+
+.phone-frame {
+    background: url(../src/images/phone-frame2.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 400px;
+    height: 810px;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 2;
+}
